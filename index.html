@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="Gerador de senhas, gerador password, senha forte">
+    <link rel="shortcut icon" href="assest/favicon.png" type="image/x-icon">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="main">
+
+        <img class="logo" src="assest/logo.png" alt="Gerador de Senhas Logo">
+
+        <main class="container-input">
+            <span>Escolha a quantidade de caracteres:</samp> <span id="valor"></span>
+            <input class="slider" type="range" name="slider" id="slider" min="5" max="25" value="15">
+            
+    
+            <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
+    
+        </main>
+        <div id="container-password" onclick="copyPassword()" class="container-password hide">
+            <span class="title">Sua senha gerada foi:</span>
+            <span id="password" class="password"></span>
+            <span id="tooltips" class="tooltip">Click na senha para copiar 👆</span>
+            
+        </div>
+
+    </section>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
